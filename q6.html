@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .nav{
+            color: blueviolet;
+            background-color: aqua;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+        .card{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+        }
+        .c{
+            text-align: center;
+            border: 2px double violet;
+            margin: 0px 90px;
+            background-color: aqua;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 7px 7px 9px violet;
+        }
+        img{
+            border-radius: 20px;
+        }
+        @media (max-width:600px) {
+           .nav{
+            color: blueviolet;
+            background-color: aqua;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+        a{
+            margin-bottom: 20px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            
+        }
+        .c{
+            text-align: center;
+            border: 2px double violet;
+            margin: 0px 90px;
+            background-color: aqua;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 7px 7px 9px violet;
+            margin-bottom: 60px;
+        }
+        img{
+            border-radius: 20px;
+        } 
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Gallery</a>
+        <a href="">Contact</a>
+
+    </div>
+    <div class="card">
+        <div class="c">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5hSO6T_vBcSefAkRZ0XX1eXGLzymS8kOutdzCgtZwJw&s=10" alt="" height="300px" width="200px">
+            <h1>Image 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, labore.</p>
+        </div>
+        <div class="c">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjxqX0eN8kb2cmZUcBlaeSX1Dt1iJSrE0dpVx4c-4OQ&s=10" alt="" height="300px" width="200px">
+            <h1>Image 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, labore.</p>
+        </div>
+        <div class="c">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__RskobpAACT_LkfCjgGeLmmtl24Dtd1N4XAAzBk3wQ&s=10" alt="" height="300px" width="200px">
+            <h1>Image 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, labore.</p>
+        </div>
+    </div>
+</body>
+</html>

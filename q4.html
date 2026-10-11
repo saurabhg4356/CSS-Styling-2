@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            color: rgb(20, 20, 30);
+        }
+        .l{
+            width: 100%;
+           height: auto;
+           display: block;
+        }
+        .p{
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        @media(orientation: portrait) {
+            .l{
+            width: 100%;
+           height: auto;
+           display: none;
+        }
+        .p{
+            width: 100%;
+            height: auto;
+            display: block;
+        }   
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our website</h1>
+    <div class="l">
+        <video src="embeded_video.mp4" autoplay loop muted></video>
+    </div>
+    <div class="p">
+        <video src="travel-portrait.mp4" autoplay loop muted></video>
+    </div>
+    
+</body>
+</html>

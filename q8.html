@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(95deg, rgb(188, 208, 57), rgb(56, 65, 128), rgb(159, 206, 242), rgb(207, 116, 118));
+            background-size: 500%;
+            animation: gd;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        @keyframes gd {
+            0%,100%{
+                background-position: 50%;
+            }
+            50%{
+                background-position: 100%;
+            }
+            
+        }
+        h1{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-variant: small-caps;
+            text-decoration: underline dashed violet;
+            text-shadow: 8px 8px 7px violet;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        td{
+            padding: 10px 20px;
+            
+        }
+        td strong{
+            font-size: x-large;
+            
+        }
+        td strong::after{
+            content: "*";
+            
+        }
+        
+        td .text{
+            border-radius: 20px;
+            font-size: large;
+            height: 25px;
+            padding-left: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        td .radio{
+            width: 15px;
+            height: 15px;
+            text-align: center;
+        }
+        
+        td button{
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: large;
+            left: 120%;
+            background-color: yellowgreen;
+        }
+
+        td button:hover{
+            background-color: black;
+            color: antiquewhite;
+            transition: transform 1s;
+            transform: scale(0.9);}
+            table{
+            border: 2px solid rgb(81, 44, 157);
+            margin-bottom: 30px;
+            box-shadow: 8px 8px 8px violet;
+            border-radius: 10px;
+            }
+            table{
+                padding: 30px;
+            }
+            select{
+                font-size: large;
+                border: 2px solid black;
+                border-radius: 10px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                text-transform: capitalize;
+                padding: 5px;
+            }
+            p{
+                /* position: relative;
+                right: 40%; */
+                margin-right: 150px;
+                font-size: large;
+            }
+            .check{
+                /* position: relative; */
+                
+                margin-left: 130px;
+                width: 19px;
+                height: 19px;
+                /* background-color: black; */
+
+            }
+            @media (max-width:600px) {
+               body{
+            background: linear-gradient(95deg, rgb(188, 208, 57), rgb(56, 65, 128), rgb(159, 206, 242), rgb(207, 116, 118));
+            background-size: 500%;
+            animation: gd;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        @keyframes gd {
+            0%,100%{
+                background-position: 50%;
+            }
+            50%{
+                background-position: 100%;
+            }
+            
+        }
+        h1{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-variant: small-caps;
+            text-decoration: underline dashed violet;
+            text-shadow: 8px 8px 7px violet;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100px;
+        }
+        td{
+            padding: 10px 20px;
+            
+        }
+        td strong{
+            font-size: large;
+            
+        }
+        td strong::after{
+            content: "*";
+            
+        }
+        
+        td .text{
+            border-radius: 20px;
+            font-size: large;
+            height: 25px;
+            padding-left: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        td .radio{
+            width: 15px;
+            height: 15px;
+            text-align: center;
+        }
+        
+        td button{
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: medium;
+            left: 120%;
+            background-color: yellowgreen;
+        }
+
+        td button:hover{
+            background-color: black;
+            color: antiquewhite;
+            transition: transform 1s;
+            transform: scale(0.9);}
+            table{
+            border: 2px solid rgb(81, 44, 157);
+            margin-bottom: 30px;
+            box-shadow: 8px 8px 8px violet;
+            border-radius: 10px;
+            }
+            table{
+                padding: 20px;
+            }
+            select{
+                font-size: medium;
+                border: 2px solid black;
+                border-radius: 10px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                text-transform: capitalize;
+                padding: 5px;
+            }
+            p{
+                /* position: relative;
+                right: 40%; */
+                margin-right: 150px;
+                font-size: large;
+            }
+            .check{
+                /* position: relative; */
+                
+                margin-left: 130px;
+                width: 19px;
+                height: 19px;
+                /* background-color: black; */
+
+            } 
+            }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Feedback Form</h1>
+    </div>
+    <div style="text-align: center; display: flex; justify-content:center ; margin-top: 100px;">
+        <form action="">
+            <table>
+                <tr>
+                    <td><strong>Name :</strong></td>
+                    <td><input class="text" type="text" placeholder="name" pattern="[a-z,A-Z]+" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Email :</strong></td>
+                    <td><input class="text" type="email" placeholder="a@example.com" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone :</strong></td>
+                    <td><input class="text" type="number" placeholder="1111111111" minlength="10" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Rating :</strong></td>
+                    <td ><input type="radio" class="radio" name="5" id="">1⭐&nbsp;&nbsp;<input class="radio" type="radio" name="5" id="">2⭐&nbsp;&nbsp;<input class="radio" type="radio" name="5" id="">3⭐&nbsp;&nbsp;<input class="radio" type="radio" name="5" id="">4⭐&nbsp;&nbsp;<input class="radio" type="radio" name="5" id="">5⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Service Type :</strong></td>
+                    <td><select name="service" id="">Service
+                        <option value="service">--Select Service--</option>
+                        <option value="customer">Customer Support</option>
+                        <option value="web">Web development</option>
+                        <option value="technical">Technical Support</option>
+                        <option value="hardware">Hardware Support</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input class="check" type="checkbox" name="" id=""> </td>
+                    <td><p>I agree to be contacted</p></td>
+                   
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

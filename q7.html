@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background: linear-gradient(120deg ,red,rgb(159, 168, 219),rgb(75, 80, 111),rgb(158, 232, 145),rgb(104, 163, 113));
+            animation-name: gd;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            background-size: 900%;
+            
+        }
+        @keyframes gd {
+            0%,100%{
+                background-position: 50%;
+            }
+            50%{
+                background-position: 100%;
+            }
+        }
+        div{
+            text-align: center;
+        }
+        .head{
+            /* background-color: rgb(206, 91, 104); */
+            font-size: x-large;
+            text-align: center;
+            font-weight: 500;
+            font-style: oblique;
+            text-decoration: underline wavy violet;
+        }
+        table{
+            text-align: center;
+            width: 70%;
+            border-radius: 20px;
+            height: auto;
+            max-width: 1000px;
+            border-collapse: collapse;
+            /* border: 2px solid blue; */
+            box-shadow: 7px 7px 9px violet;
+        }
+        .table{
+            display: flex;
+            justify-content: center;
+            
+        }
+        td{
+            padding: 20px;
+        }
+        tr:nth-child(even){
+           background-color: rgb(160, 160, 236);
+        }
+        th{
+            background-color: bisque;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            font-variant: small-caps;
+            text-shadow: 4px 4px 6px violet;
+            padding: 30px;
+        }
+        td::after{
+            content: "☠️";
+            
+        }
+        tr:nth-child(even):hover{
+            background-color: rgb(91, 81, 180);
+            color: rgb(91, 224, 113);
+            font-weight: bolder;
+        }
+        tr:nth-child(odd):hover{
+            background-color: rgb(117, 200, 81);
+            color: rgb(95, 65, 177);
+            font-weight: bolder;
+        }
+          
+        td:hover{
+            transition: transform 3s;
+            transform: perspective(50px) rotateX(360deg) scale(2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="head"><h1>Student Marks</h1></div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Roll No</th>
+                <th>Name </th>
+                <th>Subject </th>
+                <th>Marks </th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Saurabh</td>
+                <td>maths</td>
+                <td>74</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sahil</td>
+                <td>Java</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shoeb</td>
+                <td>Python</td>
+                <td>60</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Adil</td>
+                <td>HTML</td>
+                <td>30</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Aryan</td>
+                <td>Css</td>
+                <td>50</td>
+                <td>D</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

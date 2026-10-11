@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .moring{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .h1m{
+            display: block;
+            color: black;
+        }
+        .h1n{
+            display: none;
+            color: aliceblue;
+        }
+        div{
+            text-align: center;
+        }
+        .sb{
+            display: block;
+            background-color: rgb(182, 163, 163);
+            text-align: center;
+            font-size: x-large;
+        }
+        .mb{
+            display: none;
+            background-color: aliceblue;
+        }
+
+        .night{
+                display: none;
+                width: 100%;
+                height: auto;
+            }
+        @media(prefers-color-scheme: light){
+            .moring{
+                display: none;
+                width: 100%;
+                height: auto;
+            }
+            .night{
+                display: block;
+                width: 100%;
+                height: auto;
+                z-index: -1;
+            }
+            .sb{
+            display: none;
+            background-color: rgb(176, 165, 165);
+            text-align: center;
+            font-size: x-large;
+        }
+        .mb{
+            display: block;
+            background-color: rgb(190, 197, 203);
+            text-align: center;
+            font-size: x-large;
+        }
+        div{
+            text-align: center;
+        }
+            .h1m{
+            display: none;
+            color: black;
+        }
+        .h1n{
+            display: block;
+            color: rgb(19, 25, 31);
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div >
+        <h1 class="h1m">Hello, Sunshine</h1>
+        <video class="moring" src="morning video.mp4" autoplay loop muted></video>
+        <button class="sb">Sunshine</button>
+    </div>
+    <div >
+        <h1 class="h1n"Hello, Moonlight</h1>
+        <video class="night" src="night video.mp4" autoplay loop muted></video>
+        <button class="mb">Moonlight</button>
+    </div>
+</body>
+</html>
